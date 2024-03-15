@@ -9,19 +9,22 @@ import Experience from "./components/Experience.jsx";
 import Project from "./components/Project.jsx";
 import Footer from "./components/Footer.jsx";
 
+/* I added*/
+import headshot from "/src/img/headshot.jpg";
+
 function App() {
   return (
     <>
       <section className="h-screen w-[80%] flex mx-auto items-center">
         <div className="h-auto flex flex-row sm:flex-col-reverse space-x-10 sm:space-x-0 ">
-          <div className="flex flex-col justify-center space-y-5 text-base">
+            {/*inline added the w-[80%] thing in the last line of the following, this is thanks to tailwind*/}
+          <div className="flex flex-col justify-center space-y-5 text-base w-full">
+            
+            
             {/* TODO 1: Edit the content of these tags!*/}
-            <h1>Hi! I'm ______</h1>
+            <h1>Hi! I'm Andrew</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum ac ante eget arcu ultrices eleifend. Curabitur
-              tincidunt, quam non consequat cursus, nibh velit ultricies lorem,
-              et accumsan augue justo a diam.
+              This is a short intro of myself This is a short intro of myselfThis is a short intro of myself
             </p>
             <div className="flex flex-row items-center space-x-2">
               <img src={location} />
@@ -37,13 +40,13 @@ function App() {
               <a href="">
                 <img src={githublogo} />
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/andrewzhang122/">
                 <img src={instalogo} />
               </a>
               <a href="">
                 <img src={figmalogo} />
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com/in/andrew-zhang-619568255/">
                 <img src={linkedinlogo} />
               </a>
             </div>
@@ -51,7 +54,7 @@ function App() {
           <div className="flex justify-center ">
             {/* TODO 3: Change this to a custom image! */}
             <img
-              src={wicclogo}
+              src={headshot}
               alt="WICC Logo"
               className="object-contain sm:p-10"
             />
